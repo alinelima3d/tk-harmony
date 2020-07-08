@@ -39,7 +39,7 @@
      <collapsed val="false"/>
     </options>
     <nodeslist>
-     <module type="SCRIPT_MODULE" name="Shotgun_Engine_birdo" pos="-643,-340,5" publishUnderTab="ScriptModule">
+     <module type="SCRIPT_MODULE" name="Shotgun_Engine_birdo2" pos="-646,-340,5" publishUnderTab="ScriptModule">
       <options>
        <color val="#0000FFFF"/>
        <collapsed val="false"/>
@@ -461,7 +461,7 @@ System.println("Shotgun Startup Project Loaded");
      </module>
     </nodeslist>
     <linkedlist>
-     <link out="Shotgun_Engine_birdo" in="Shotgun_Banner" inport="0"/>
+     <link out="Shotgun_Engine_birdo2" in="Shotgun_Banner" inport="0"/>
      <link out="Shotgun_Banner" in="Display"/>
      <link out="Drawing" in="Composite" inport="1"/>
      <link out="Drawing_1" in="Composite" inport="0"/>
