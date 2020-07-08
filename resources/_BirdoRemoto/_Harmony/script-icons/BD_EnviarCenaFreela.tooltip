@@ -1,0 +1,6 @@
+BD_EnviarCenaFreela
+Use este Script para enviar a cena LOCAL para rede.
+O script reconhece os caminhos na rede baseado no nome da cena,
+se estiver errado, ele vai te dar um esporro!
+(Animadores Freela)
+(PRECISA CONEXAO COM A REDE)

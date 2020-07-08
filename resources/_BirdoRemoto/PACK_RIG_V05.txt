@@ -1,0 +1,8 @@
+22/06/2020
+-- BD_SmartTimming
+-- BD_RenameToX
+-- BD_GerarTPL
+-- adicionei o create scene birdo
+-- render local
+-- Zip (somente Bat)
+-- renderFAzendinha (somente bat)

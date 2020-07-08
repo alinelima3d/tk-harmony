@@ -1,0 +1,5 @@
+BD_RenderLocal
+Use este script para renderizar a cena local na pasta
+_birdoRemoto/_render
+Tem a opcao de enviar para rede apos render.
+(PRECISA CONEXAO VPN PARA MANDAR PRA REDE)

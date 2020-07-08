@@ -1,0 +1,22 @@
+NINJIN
+Corta Essa Ninjin!
+/132_Ninjin/1B_TEMPORADA/ANIMACAO/
+/132_Ninjin/_tbLIB/
+/132_Ninjin/1B_TEMPORADA/BG/
+/132_Ninjin/1B_TEMPORADA/DESIGN/
+/132_Ninjin/1B_TEMPORADA/BOARD/
+/132_Ninjin/1B_TEMPORADA/BIBILIOTECA/
+Q:/1B_TEMPORADA/ANIMACAO/
+
+////////// NINJIN //////////////////////
+///caminhos para o projeto:////////////
+NINJIN 1B_TEMPORADA
+[0]: Titulo do Projeto;
+[1]: SubTitulo do Projeto;
+[2]: caminho da ANIMACAO na rede EP/1_Cenas ... EP/2_Render;
+[3]: caminho da pasta _tbLIB (BirdoLib, tplLib, _NOTES);
+[4]: caminho dos BGs;
+[5]: caminho para a pasta DESIGN;
+[6]: caminho BOARD na rede (0_Thumbnail, 1_Projetos, 2_Render_WIP, 3_Render_Aprovacao);
+[7]: caminho para BIBLIOTECA;
+[8]: caminho da cena para usar na _renderFazendinha (adicionar ep + "1_Cenas")
