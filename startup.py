@@ -243,11 +243,14 @@ class HarmonyLauncher(SoftwareLauncher):
         xtage = os.path.join(
             self.disk_location, "resources", "templates", "startup", "template.xstage"
         )
+        xtage_folder = os.path.join(
+            self.disk_location, "resources", "templates", "startup"
+        )
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
 
         # copiar arquivo para lugar certo
-        folder = os.path.dirname(xtage)
-        shutil.copytree(xtage, 'C:/Temp/')
+        
+        shutil.copytree(xtage_folder, 'C:/Temp/')
 
         args = " -debug"
         args += ' "' + xtage + '"'
