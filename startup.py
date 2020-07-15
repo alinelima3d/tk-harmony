@@ -30,10 +30,6 @@ logger = sgtk.LogManager.get_logger(__name__)
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
-import ctypes
-MessageBox = ctypes.windll.user32.MessageBoxW
-MessageBox(None, 'Hello', 'inicio do startup', 0)
-
 
 def md5(fname):
     hash_md5 = hashlib.md5()
@@ -247,6 +243,10 @@ class HarmonyLauncher(SoftwareLauncher):
             self.disk_location, "resources", "templates", "startup", "template.xstage"
         )
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
+
+        # copiar arquivo para lugar certo
+        folder = os.path.dirname(xtage)
+        shutil.copytree(xtage, 'C:/Temp/')
 
         args = " -debug"
         args += ' "' + xtage + '"'

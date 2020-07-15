@@ -16,9 +16,7 @@ It sets up the Toolkit context and prepares the engine to run.
 import os
 import sys
 import traceback
-import ctypes
-MessageBox = ctypes.windll.user32.MessageBoxW
-MessageBox(None, 'Hello', 'inicio do bootstrap', 0)
+
 
 __author__ = "Diego Garcia Huerta"
 __contact__ = "https://www.linkedin.com/in/diegogh/"
