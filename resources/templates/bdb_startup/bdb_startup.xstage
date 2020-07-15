@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project source="Harmony Premium (HarmonyPremium.exe) version 16.0.1 build 14405 2019-02-08 08:43:49" version="1601" build="14405" creator="harmony">
  <elements>
-  <element id="6" elementName="NOTE" elementFolder="NOTE" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
-  <element id="7" elementName="LEMBRETES" elementFolder="LEMBRETES" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+  <element id="1" elementName="NOTE" elementFolder="NOTE" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
+  <element id="2" elementName="LEMBRETES" elementFolder="LEMBRETES" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
    <drawings>
     <dwg name="1"/>
    </drawings>
   </element>
-  <element id="8" elementName="LineUp" elementFolder="LineUp" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+  <element id="3" elementName="LineUp" elementFolder="LineUp" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
    <drawings>
     <dwg name="BadaBean"/>
    </drawings>
   </element>
-  <element id="9" elementName="Asset" elementFolder="Asset" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+  <element id="4" elementName="bdb_startup" elementFolder="bdb_startup" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
    <drawings>
     <dwg name="1"/>
    </drawings>
   </element>
-  <element id="10" elementName="REFERENCIA" elementFolder="REFERENCIA" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
+  <element id="5" elementName="REFERENCIA" elementFolder="REFERENCIA" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
  </elements>
  <options>
   <metrics unitAspectRatioX="4" unitAspectRatioY="3" numberOfUnitsX="24" numberOfUnitsY="24" numberOfUnitsZ="12"/>
@@ -33,97 +33,97 @@
  </options>
  <timelineMarkers/>
  <scenes>
-  <scene name="Top" id="09a3701060100c0b" nbframes="60" startFrame="1" stopFrame="60">
+  <scene name="Top" id="0a3bd8c69ad00c68" nbframes="11" startFrame="1" stopFrame="11">
    <columns>
-    <column type="0" name="ATV-0A3A3117CEC0129A" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="6"/>
-    <column type="3" name="ATV-0A3A3117CEC0129C" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="0" name="ATV-0A3BD8C69AD0124D" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="1"/>
+    <column type="3" name="ATV-0A3BD8C69AD0124F" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="18.513784589275254" y="18.513784589275254"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC0129E" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01251" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="7.9127114843385371" y="7.9127114843385371"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012A0" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01253" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012A2" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01255" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1.4747980828289655" y="1.4747980828289655"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012A4" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01257" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012A6" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01259" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
-    <column type="0" name="ATV-0A3A3117CEC012A8" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="7">
-     <elementSeq exposures="1-70" val="1" id="7"/>
+    <column type="0" name="ATV-0A3BD8C69AD0125B" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="2">
+     <elementSeq exposures="1-70" val="1" id="2"/>
     </column>
-    <column type="0" name="ATV-0A3A3117CEC012AA" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="8">
-     <elementSeq exposures="1-70" val="BadaBean" id="8"/>
+    <column type="0" name="ATV-0A3BD8C69AD0125D" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="3">
+     <elementSeq exposures="1-70" val="BadaBean" id="3"/>
     </column>
-    <column type="0" name="ATV-0A3A3117CEC012AC" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="9">
-     <elementSeq exposures="1" val="1" id="9"/>
+    <column type="0" name="bdb_startup" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="4">
+     <elementSeq exposures="1" val="1" id="4"/>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012AE" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01261" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012B0" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01263" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012B2" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01265" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012B4" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01267" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1" y="1"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012B6" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD01269" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1" y="1"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012B8" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD0126B" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
-    <column type="3" name="ATV-0A3A3117CEC012BA" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
+    <column type="3" name="ATV-0A3BD8C69AD0126D" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
-    <column type="0" name="ATV-0A3A3117CEC012BC" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="10"/>
+    <column type="0" name="ATV-0A3BD8C69AD0126F" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="5"/>
    </columns>
    <options>
     <camera val="Camera"/>
@@ -134,7 +134,7 @@
      <collapsed val="false"/>
     </options>
     <nodeslist>
-     <group name="_NOTES" pos="-581,131,8">
+     <group name="_NOTES" pos="0,307,8">
       <options>
        <collapsed val="false"/>
        <subnodeCollapsed val="false"/>
@@ -202,7 +202,7 @@
          <ikStiffness val="1" defaultValue="1"/>
          <drawing>
           <elementMode val="true"/>
-          <element col="ATV-0A3A3117CEC0129A">
+          <element col="ATV-0A3BD8C69AD0124D">
            <layer/>
           </element>
           <customName>
@@ -297,7 +297,7 @@
        <link out="Multi-Port-In" in="NOTE" inport="0"/>
       </linkedlist>
      </group>
-     <group name="SETUP" pos="-308,587,1">
+     <group name="SETUP" pos="273,763,1">
       <options>
        <collapsed val="true"/>
        <subnodeCollapsed val="true"/>
@@ -337,7 +337,7 @@
         </options>
         <attrs>
          <exportToMovie val="false"/>
-         <drawingName val="frames/NAME"/>
+         <drawingName val="C:/_BirdoRemoto/Shotgun/tk-harmony/resources/templates/bdb_startup"/>
          <moviePath val="frames/output"/>
          <movieFormat val="com.toonboom.quicktime.legacy"/>
          <movieAudio/>
@@ -379,14 +379,14 @@
          <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
          <position>
           <separate val="true"/>
-          <x val="0" defaultValue="0" col="ATV-0A3A3117CEC0129C"/>
-          <y val="0" defaultValue="0" col="ATV-0A3A3117CEC0129E"/>
-          <z val="0" defaultValue="0" col="ATV-0A3A3117CEC012A0"/>
+          <x val="0" defaultValue="0" col="ATV-0A3BD8C69AD0124F"/>
+          <y val="0" defaultValue="0" col="ATV-0A3BD8C69AD01251"/>
+          <z val="0" defaultValue="0" col="ATV-0A3BD8C69AD01253"/>
          </position>
          <scale>
           <separate val="false"/>
           <inFields val="false"/>
-          <xy val="1" defaultValue="1" col="ATV-0A3A3117CEC012A2"/>
+          <xy val="1" defaultValue="1" col="ATV-0A3BD8C69AD01255"/>
           <x val="1" defaultValue="1"/>
           <y val="1" defaultValue="1"/>
           <z val="1" defaultValue="1"/>
@@ -395,10 +395,10 @@
           <separate val="false"/>
           <anglex val="0" defaultValue="0"/>
           <angley val="0" defaultValue="0"/>
-          <anglez val="0" defaultValue="0" col="ATV-0A3A3117CEC012A4"/>
+          <anglez val="0" defaultValue="0" col="ATV-0A3BD8C69AD01257"/>
          </rotation>
-         <angle val="0" defaultValue="0" col="ATV-0A3A3117CEC012A4"/>
-         <skew val="0" defaultValue="0" col="ATV-0A3A3117CEC012A6"/>
+         <angle val="0" defaultValue="0" col="ATV-0A3BD8C69AD01257"/>
+         <skew val="0" defaultValue="0" col="ATV-0A3BD8C69AD01259"/>
          <pivot>
           <x val="0" defaultValue="0"/>
           <y val="0" defaultValue="0"/>
@@ -532,7 +532,7 @@
          <ikStiffness val="1" defaultValue="1"/>
          <drawing>
           <elementMode val="true"/>
-          <element col="ATV-0A3A3117CEC012A8">
+          <element col="ATV-0A3BD8C69AD0125B">
            <layer/>
           </element>
           <customName>
@@ -664,7 +664,7 @@
          <ikStiffness val="1" defaultValue="1"/>
          <drawing>
           <elementMode val="true"/>
-          <element col="ATV-0A3A3117CEC012AA">
+          <element col="ATV-0A3BD8C69AD0125D">
            <layer/>
           </element>
           <customName>
@@ -752,7 +752,7 @@
        <link out="Visibility_ColourCard" in="Comp_VIEW" inport="0"/>
       </linkedlist>
      </group>
-     <module type="READ" name="Asset" pos="-309,-148,2" publishUnderTab="Asset">
+     <module type="READ" name="bdb_startup" pos="257,28,2" publishUnderTab="Asset">
       <options>
        <collapsed val="true"/>
        <version val="1"/>
@@ -812,7 +812,7 @@
        <ikStiffness val="1" defaultValue="1"/>
        <drawing>
         <elementMode val="true"/>
-        <element col="ATV-0A3A3117CEC012AC">
+        <element col="bdb_startup">
          <layer/>
         </element>
         <customName>
@@ -863,7 +863,7 @@
        <tileVertical val="false"/>
       </attrs>
      </module>
-     <module type="PEG" name="REFERENCIA-P" pos="2,230,3" publishUnderTab="REFERENCIA-P">
+     <module type="PEG" name="REFERENCIA-P" pos="583,406,3" publishUnderTab="REFERENCIA-P">
       <options>
        <collapsed val="true"/>
        <version val="1"/>
@@ -874,26 +874,26 @@
        <cameraAlignment val="NO_CAMERA_ALIGNMENT"/>
        <position>
         <separate val="true"/>
-        <x val="0" defaultValue="0" col="ATV-0A3A3117CEC012AE"/>
-        <y val="0" defaultValue="0" col="ATV-0A3A3117CEC012B0"/>
-        <z val="0" defaultValue="0" col="ATV-0A3A3117CEC012B2"/>
+        <x val="0" defaultValue="0" col="ATV-0A3BD8C69AD01261"/>
+        <y val="0" defaultValue="0" col="ATV-0A3BD8C69AD01263"/>
+        <z val="0" defaultValue="0" col="ATV-0A3BD8C69AD01265"/>
        </position>
        <scale>
         <separate val="true"/>
         <inFields val="false"/>
         <xy val="1" defaultValue="1"/>
-        <x val="1" defaultValue="1" col="ATV-0A3A3117CEC012B4"/>
-        <y val="1" defaultValue="1" col="ATV-0A3A3117CEC012B6"/>
+        <x val="1" defaultValue="1" col="ATV-0A3BD8C69AD01267"/>
+        <y val="1" defaultValue="1" col="ATV-0A3BD8C69AD01269"/>
         <z val="1" defaultValue="1"/>
        </scale>
        <rotation>
         <separate val="false"/>
         <anglex val="0" defaultValue="0"/>
         <angley val="0" defaultValue="0"/>
-        <anglez val="0" defaultValue="0" col="ATV-0A3A3117CEC012B8"/>
+        <anglez val="0" defaultValue="0" col="ATV-0A3BD8C69AD0126B"/>
        </rotation>
-       <angle val="0" defaultValue="0" col="ATV-0A3A3117CEC012B8"/>
-       <skew val="0" defaultValue="0" col="ATV-0A3A3117CEC012BA"/>
+       <angle val="0" defaultValue="0" col="ATV-0A3BD8C69AD0126B"/>
+       <skew val="0" defaultValue="0" col="ATV-0A3BD8C69AD0126D"/>
        <pivot>
         <x val="0" defaultValue="0"/>
         <y val="0" defaultValue="0"/>
@@ -925,7 +925,7 @@
        <addCompositeToGroup val="true"/>
       </attrs>
      </module>
-     <module type="READ" name="REFERENCIA" pos="-14,309,4" publishUnderTab="REFERENCIA">
+     <module type="READ" name="REFERENCIA" pos="567,485,4" publishUnderTab="REFERENCIA">
       <options>
        <showTimelineThumb val="true"/>
        <collapsed val="true"/>
@@ -986,7 +986,7 @@
        <ikStiffness val="1" defaultValue="1"/>
        <drawing>
         <elementMode val="true"/>
-        <element col="ATV-0A3A3117CEC012BC">
+        <element col="ATV-0A3BD8C69AD0126F">
          <layer/>
         </element>
         <customName>
@@ -1037,7 +1037,7 @@
        <tileVertical val="false"/>
       </attrs>
      </module>
-     <module type="FADE" name="Transparency" pos="0,540,5" publishUnderTab="Transparency">
+     <module type="FADE" name="Transparency" pos="581,716,5" publishUnderTab="Transparency">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -1046,7 +1046,7 @@
        <transparency val="50" defaultValue="50"/>
       </attrs>
      </module>
-     <module type="COMPOSITE" name="Composite_ASSET" pos="-325,-4,7" publishUnderTab="Composite_ASSET">
+     <module type="COMPOSITE" name="Composite_ASSET" pos="256,172,7" publishUnderTab="Composite_ASSET">
       <options>
        <collapsed val="false"/>
        <version val="1"/>
@@ -1065,7 +1065,7 @@
        <mergeVector val="false"/>
       </attrs>
      </module>
-     <module type="COMPOSITE" name="Comp_REF" pos="5,445,6" publishUnderTab="Comp_REF">
+     <module type="COMPOSITE" name="Comp_REF" pos="586,621,6" publishUnderTab="Comp_REF">
       <options>
        <collapsed val="true"/>
        <version val="1"/>
@@ -1087,7 +1087,7 @@
     </nodeslist>
     <linkedlist>
      <link out="_NOTES" in="SETUP" inport="2"/>
-     <link out="Asset" in="Composite_ASSET"/>
+     <link out="bdb_startup" in="Composite_ASSET"/>
      <link out="REFERENCIA-P" in="REFERENCIA" inport="0"/>
      <link out="REFERENCIA" in="Comp_REF"/>
      <link out="Transparency" in="SETUP" inport="0"/>
@@ -1095,18 +1095,18 @@
      <link out="Comp_REF" in="Transparency"/>
     </linkedlist>
     <backdrops>
-     <backdrop topLeft="-616,19" bottomRight="-431,150">
+     <backdrop topLeft="-35,195" bottomRight="150,326">
       <background color="#A521A3FF"/>
       <title text="NOTES" color="#000000FF" size="14" font="Arial"/>
       <description text="Notes de supervisao dentro desse grupo!" color="#000000FF" size="14" font="Arial"/>
      </backdrop>
-     <backdrop topLeft="-164,65" bottomRight="310,366">
+     <backdrop topLeft="417,241" bottomRight="891,542">
       <background color="#C11717FF"/>
       <title text="COLAR REFF AQUI" color="#000000FF" size="12" font="Arial"/>
       <description text="Use este espaço para Colar as referencias necessárias! 
 Lembre-se de fazer a referencia na ESCALA certa baseada no LineUp" color="#000000FF" size="12" font="Arial"/>
      </backdrop>
-     <backdrop topLeft="-632,-338" bottomRight="219,-58">
+     <backdrop topLeft="-51,-162" bottomRight="800,118">
       <background color="#E16B14FF"/>
       <title text="ASSET_Template" color="#000000FF" size="14" font="Arial"/>
       <description text="Importante que estes drawings não contenham informação de transformação!!!
@@ -1139,18 +1139,15 @@ DICA: Use a janela Cordinate na barra superior para conferir" color="#000000FF" 
     <meta type="guideList" name="guideList" creator="Harmony Premium" version="1.0">
      <guideList selectedGuide="-1"/>
     </meta>
-    <meta type="string" name="Shotgun Toolkit Engine" creator="Harmony Premium" version="1.0">
-     <string value="Startup template"/>
-    </meta>
    </metas>
   </scene>
  </scenes>
  <symbols>
   <folder name="Symbols">
-   <scene id="09a3701060100c0b"/>
+   <scene id="0a3bd8c69ad00c68"/>
   </folder>
  </symbols>
  <timeline>
-  <scene id="09a3701060100c0b"/>
+  <scene id="0a3bd8c69ad00c68"/>
  </timeline>
 </project>
