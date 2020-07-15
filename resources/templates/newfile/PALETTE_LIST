@@ -1,3 +1,2 @@
 ToonBoomAnimationInc PaletteList 1
-palette-library/template LINK "./palette-library/template.plt"
-palette-library/template_pencil_texture LINK "./palette-library/template_pencil_texture.plt"
+palette-library/SETUP LINK "C:/_BirdoRemoto/Shotgun/tk-harmony/resources/templates/bdb_startup/palette-library/SETUP.plt"
