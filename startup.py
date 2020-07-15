@@ -20,6 +20,7 @@ import subprocess
 import sgtk
 from sgtk.platform.errors import TankEngineInitError
 from sgtk.platform import SoftwareLauncher, SoftwareVersion, LaunchInformation
+import shutil
 
 
 __author__ = "Diego Garcia Huerta"
