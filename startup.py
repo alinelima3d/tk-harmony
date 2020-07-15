@@ -204,7 +204,7 @@ class HarmonyLauncher(SoftwareLauncher):
         required_env["SGTK_HARMONY_ENGINE_RESOURCES_PATH"] = resources_path.replace("\\", "/")
 
         newfile_template_path = os.path.join(
-            resources_path, "templates", "bdb_startup", "bdb_startup.xstage"
+            resources_path, "templates", "newfile", "template.xstage"
         )
         required_env["SGTK_HARMONY_NEWFILE_TEMPLATE"] = newfile_template_path.replace(
             "\\", "/"

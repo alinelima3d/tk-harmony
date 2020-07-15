@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<elements source="Harmony Premium (HarmonyPremium.exe) version 16.0.1 build 14405 2019-02-08 08:43:49" version="1601" build="14405">
- <element id="1" elementName="NOTE" elementFolder="NOTE" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
- <element id="2" elementName="LEMBRETES" elementFolder="LEMBRETES" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
- <element id="3" elementName="LineUp" elementFolder="LineUp" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
- <element id="4" elementName="bdb_startup" elementFolder="bdb_startup" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
- <element id="5" elementName="REFERENCIA" elementFolder="REFERENCIA" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
+<elements source="Harmony Premium (HarmonyPremium.exe) version 16.0.0 build 14155 2018-11-01 15:36:56" version="1600" build="14155">
+ <element id="1" elementName="Drawing" elementFolder="Drawing" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements"/>
 </elements>
