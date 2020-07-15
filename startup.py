@@ -30,6 +30,10 @@ logger = sgtk.LogManager.get_logger(__name__)
 
 DIR_PATH = os.path.dirname(os.path.realpath(__file__))
 
+import ctypes
+MessageBox = ctypes.windll.user32.MessageBoxW
+MessageBox(None, 'Hello', 'inicio do startup', 0)
+
 
 def md5(fname):
     hash_md5 = hashlib.md5()

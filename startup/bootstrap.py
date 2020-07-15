@@ -17,6 +17,8 @@ import os
 import sys
 import traceback
 import ctypes
+MessageBox = ctypes.windll.user32.MessageBoxW
+MessageBox(None, 'Hello', 'inicio do bootstrap', 0)
 
 __author__ = "Diego Garcia Huerta"
 __contact__ = "https://www.linkedin.com/in/diegogh/"
@@ -116,8 +118,7 @@ def start_toolkit():
 
     # Check if a file was specified to open and open it.
     file_to_open = os.environ.get("SGTK_FILE_TO_OPEN")
-    MessageBox = ctypes.windll.user32.MessageBoxW
-    MessageBox(None, 'Hello', 'Window title', 0)
+    
     if file_to_open:
         msg = "Shotgun: Opening '%s'..." % file_to_open
         display_info(msg)
