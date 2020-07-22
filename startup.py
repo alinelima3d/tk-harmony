@@ -256,6 +256,14 @@ class HarmonyLauncher(SoftwareLauncher):
             'stepCode': 'PRB',
         }
 
+        # se existir o path no x
+            # colocar file to open no x
+        # se existtir o path no z
+            # copiar pasta e colocar file to open no x
+        # senao, colocar path no file to save
+        required_env["FILE_TO_OPEN"] = path
+        required_env["FILE_TO_SAVE"] = ''
+
         args = " -debug"
         args += ' "' + xtage + '"'
 
