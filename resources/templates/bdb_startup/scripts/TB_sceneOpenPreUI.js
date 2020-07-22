@@ -7,20 +7,16 @@
 include( "TB_RelinkPaths.js" )
 
 function TB_sceneOpenPreUI_Offline(){
+TB_RelinkPathsInteractive();
 
-
-var assetName = "Character03";
-var scenePath = "X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/";
-
-MessageLog.trace("pre open scene" );
+var assetName = //pegar o nome do asset pelo System.getenv;
+var scenePath = //"pegar o caminho pelo System.getenv OBS:SEM A VERSAO '.xstage'!! SOMENTE O CAMINHO DA PASTA";
 
 	if(!sceneExists(scenePath)){
-		MessageLog.trace("scene exists pre save as" );
-		scene.saveAs(scenePath);
+	scene.saveAs(scenePath);
 	} else {
 	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
 	var lastVersion = getLastSceneVersion(scenePath);
-	MessageLog.trace("lastVersion" + lastVersion );
 		if(!lastVersion){
 		MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
 		return;
@@ -30,8 +26,7 @@ MessageLog.trace("pre open scene" );
 	start.launchAndDetach();
 	scene.closeSceneAndExit();
 	}
-
-TB_RelinkPathsInteractive();
+	
 var textLog = scenePath + "/_scene.log";
 
 	if(!writeLog(textLog)){
