@@ -32,6 +32,7 @@ MessageLog.trace("pre open scene" );
 	}
 
 TB_RelinkPathsInteractive();
+	
 var textLog = scenePath + "/_scene.log";
 
 	if(!writeLog(textLog)){

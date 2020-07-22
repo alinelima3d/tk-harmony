@@ -38,36 +38,42 @@
     <column type="0" name="ATV-0A3BD8C69AD0124D" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="1"/>
     <column type="3" name="ATV-0A3BD8C69AD0124F" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="18.513784589275254" y="18.513784589275254"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01251" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="7.9127114843385371" y="7.9127114843385371"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01253" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01255" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1.4747980828289655" y="1.4747980828289655"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01257" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01259" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
@@ -83,42 +89,49 @@
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01261" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01263" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01265" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01267" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1" y="1"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01269" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1" y="1"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD0126B" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD0126D" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
@@ -337,7 +350,7 @@
         </options>
         <attrs>
          <exportToMovie val="false"/>
-         <drawingName val="C:/_BirdoRemoto/Shotgun/tk-harmony/resources/templates/bdb_startup"/>
+         <drawingName val="frames/bdb_startup"/>
          <moviePath val="frames/output"/>
          <movieFormat val="com.toonboom.quicktime.legacy"/>
          <movieAudio/>

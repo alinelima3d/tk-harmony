@@ -205,7 +205,7 @@ class HarmonyLauncher(SoftwareLauncher):
         required_env["SGTK_HARMONY_ENGINE_RESOURCES_PATH"] = resources_path.replace("\\", "/")
 
         newfile_template_path = os.path.join(
-            resources_path, "templates", "bdb_startup", "bdb_startup.xstage"
+            resources_path, "templates", "newfile", "template.xstage"
         )
         required_env["SGTK_HARMONY_NEWFILE_TEMPLATE"] = newfile_template_path.replace(
             "\\", "/"
@@ -241,10 +241,10 @@ class HarmonyLauncher(SoftwareLauncher):
             os.makedirs(user_scripts_path)
 
         xtage = os.path.join(
-            self.disk_location, "resources", "templates", "bdb_startup", "bdb_startup.xstage"
+            self.disk_location, "resources", "templates", "startup", "template.xstage"
         )
         xtage_folder = os.path.join(
-            self.disk_location, "resources", "templates", "bdb_startup"
+            self.disk_location, "resources", "templates", "startup"
         )
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
 
@@ -264,7 +264,7 @@ class HarmonyLauncher(SoftwareLauncher):
         # senao, colocar path no file to save
         required_env["ASSET_NAME"] = assetName
         required_env["SCENE_PATH"] = path
-        
+        required_env["FILE_TO_SAVE"] = ''
 
         args = " -debug"
         args += ' "' + xtage + '"'
