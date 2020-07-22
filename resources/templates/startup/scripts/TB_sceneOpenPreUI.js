@@ -14,10 +14,11 @@ function TB_sceneOpenPreUI_Offline(){
 TB_RelinkPathsInteractive();
 
 var assetName = System.getenv('ASSET_NAME');
-var scenePath = System.getenv('SCENE_PATH') + assetName;
+var scenePath = System.getenv('SCENE_PATH');
 
 	if(!sceneExists(scenePath)){
 	scene.saveAs(scenePath);
+	scene.saveAsNewVersion(assetName + ".v001", true);
 	} else {
 	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
 	var lastVersion = getLastSceneVersion(scenePath);
