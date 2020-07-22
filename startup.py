@@ -241,10 +241,10 @@ class HarmonyLauncher(SoftwareLauncher):
             os.makedirs(user_scripts_path)
 
         xtage = os.path.join(
-            self.disk_location, "resources", "templates", "startup", "template.xstage"
+            self.disk_location, "resources", "templates", "bdb_startup", "bdb_startup.xstage"
         )
         xtage_folder = os.path.join(
-            self.disk_location, "resources", "templates", "startup"
+            self.disk_location, "resources", "templates", "bdb_startup"
         )
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
 
