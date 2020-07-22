@@ -13,8 +13,8 @@ MessageLog.trace("pre import startup" );
 function TB_sceneOpenPreUI_Offline(){
 TB_RelinkPathsInteractive();
 
-var assetName = "Character03";
-var scenePath = "X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/";
+var assetName = System.getenv('ASSET_NAME');
+var scenePath = System.getenv('SCENE_PATH') + assetName;
 
 	if(!sceneExists(scenePath)){
 	scene.saveAs(scenePath);
