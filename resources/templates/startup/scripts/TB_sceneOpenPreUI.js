@@ -9,12 +9,23 @@ include( "TB_RelinkPaths.js" )
 function TB_sceneOpenPreUI_Offline(){
 TB_RelinkPathsInteractive();
 
-var assetName = scene.currentScene();
-var scenePath = scene.currentProjectPath();
+var assetName = System.getenv("ASSET_NAME");
+var scenePath = System.getenv("SCENE_PATH");
+
+if(!sceneExists(scenePath)){
+	scene.saveAs(scenePath)
+} else {
+	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
+	var lastVersion = getLastSceneVersion(scenePath);
+	var start = Process2(tbPath, lastVersion);
+	start.launchAndDetach();
+	scene.closeSceneAndExit();
+}
+
 var textLog = scenePath + "/_scene.log";
 
 	if(!writeLog(textLog)){
-	MessageLog.trace("Scene Opened! " + scenePath);
+	MessageLog.trace("Scene Opened startup! " + scenePath);
 	return;
 	}
 

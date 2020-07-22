@@ -248,11 +248,12 @@ class HarmonyLauncher(SoftwareLauncher):
         )
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
 
+        assetName = self.context.entity['name']
         path = '%(projectRoot)s/%(projectName)s/assets/%(entityType)s/%(entityName)s/%(stepCode)s/work/harmony/scenes' % {
             'projectRoot': 'X:/projects',
-            'projectName': self.context.entity['name'],
+            'projectName': self.context.project['name'],
             'entityType': 'Character',
-            'entityName': 'Character03',
+            'entityName': assetName,
             'stepCode': 'PRB',
         }
 
@@ -261,8 +262,9 @@ class HarmonyLauncher(SoftwareLauncher):
         # se existtir o path no z
             # copiar pasta e colocar file to open no x
         # senao, colocar path no file to save
-        required_env["FILE_TO_OPEN"] = path
-        required_env["FILE_TO_SAVE"] = ''
+        required_env["ASSET_NAME"] = assetName
+        required_env["SCENE_PATH"] = path
+        
 
         args = " -debug"
         args += ' "' + xtage + '"'
