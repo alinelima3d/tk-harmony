@@ -248,9 +248,13 @@ class HarmonyLauncher(SoftwareLauncher):
         )
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
 
-        # copiar arquivo para lugar certo
-        
-        shutil.copytree(xtage_folder, 'C:/Temp/')
+        path = '%(projectRoot)s/%(projectName)s/assets/%(entityType)s/%(entityName)s/%(stepCode)s/work/harmony/scenes' % {
+            'projectRoot': 'X:/projects',
+            'projectName': self.context.entity['name'],
+            'entityType': 'Character',
+            'entityName': 'Character03',
+            'stepCode': 'PRB',
+        }
 
         args = " -debug"
         args += ' "' + xtage + '"'
