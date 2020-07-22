@@ -11,6 +11,17 @@ TB_RelinkPathsInteractive();
 
 var assetName = scene.currentScene();
 var scenePath = scene.currentProjectPath();
+
+MessageLog.trace("pre Scene Opened startupp! " + scenePath);
+var tbPath = "C:/Program Files (x86)/Toon Boom Animation/Toon Boom Harmony 16.0 Premium/win64/bin/HarmonyPremium.exe";
+var lastVersion = 'X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/Character03.v001.xstage'
+var start = Process2(tbPath, lastVersion);
+MessageLog.trace("mid Scene Opened startupp! " + scenePath);
+start.launchAndDetach();
+scene.closeSceneAndExit();
+MessageLog.trace("pos Scene Opened startupp! " + scenePath);
+
+
 var textLog = scenePath + "/_scene.log";
 
 	if(!writeLog(textLog)){
