@@ -6,8 +6,7 @@
  */ 
 include( "TB_RelinkPaths.js" )
 
-function TB_sceneOpenPreUI_Offline(){
-
+MessageLog.trace("after include" );
 
 var assetName = "Character03";
 var scenePath = "X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/";
