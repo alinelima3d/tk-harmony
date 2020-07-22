@@ -249,7 +249,7 @@ class HarmonyLauncher(SoftwareLauncher):
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
 
         assetName = self.context.entity['name']
-        path = '%(projectRoot)s/%(projectName)s/assets/%(entityType)s/%(entityName)s/%(stepCode)s/work/harmony/scenes' % {
+        path = '%(projectRoot)s/%(projectName)s/assets/%(entityType)s/%(entityName)s/%(stepCode)s/work/harmony/' % {
             'projectRoot': 'X:/projects',
             'projectName': self.context.project['name'],
             'entityType': 'Character',

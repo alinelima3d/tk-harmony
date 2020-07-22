@@ -9,7 +9,7 @@ include( "TB_RelinkPaths.js" )
 MessageLog.trace("after include" );
 
 var assetName = System.getenv('ASSET_NAME');
-var scenePath = System.getenv('SCENE_PATH');
+var scenePath = System.getenv('SCENE_PATH') + assetName;
 
 MessageLog.trace("pre open scene" );
 
