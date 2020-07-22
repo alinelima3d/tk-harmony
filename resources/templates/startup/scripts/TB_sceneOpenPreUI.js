@@ -6,39 +6,36 @@
  */ 
 include( "TB_RelinkPaths.js" )
 
-function TB_sceneOpenPreUI_Offline(){
+MessageLog.trace("after include" );
+
+var assetName = "Character03";
+var scenePath = "X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/";
+
+MessageLog.trace("pre open scene" );
+
+	if(!sceneExists(scenePath)){
+		MessageLog.trace("scene exists pre save as" );
+		scene.saveAs(scenePath);
+	} else {
+	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
+	var lastVersion = getLastSceneVersion(scenePath);
+	MessageLog.trace("lastVersion" + lastVersion );
+		if(!lastVersion){
+		MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
+		return;
+		}
+			
+	var start = Process2(tbPath, lastVersion);
+	start.launchAndDetach();
+	scene.closeSceneAndExit();
+	}
+
 TB_RelinkPathsInteractive();
-
-var assetName = System.getenv("ASSET_NAME");
-var scenePath = System.getenv("SCENE_PATH");
-
-MessageLog.trace("pre Scene Opened startupp! " + scenePath);
-var tbPath = "C:/Program Files (x86)/Toon Boom Animation/Toon Boom Harmony 16.0 Premium/win64/bin/HarmonyPremium.exe";
-var lastVersion = 'X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/Character03.v001.xstage'
-var start = Process2(tbPath, lastVersion);
-MessageLog.trace("mid Scene Opened startupp! " + scenePath);
-start.launchAndDetach();
-scene.closeSceneAndExit();
-MessageLog.trace("pos Scene Opened startupp! " + scenePath);
-// if(!sceneExists(scenePath)){
-// 	MessageLog.trace("scene exists! " + scenePath);
-// 	scene.saveAs(scenePath)
-// } else {
-// 	MessageLog.trace("else " + scenePath);
-// 	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
-// 	MessageLog.trace("tbPath " + tbPath);
-// 	var lastVersion = getLastSceneVersion(scenePath);
-// 	MessageLog.trace("lastVersion " + lastVersion);
-// 	var start = Process2(tbPath, lastVersion);
 	
-// 	start.launchAndDetach();
-// 	scene.closeSceneAndExit();
-// }
-
 var textLog = scenePath + "/_scene.log";
 
 	if(!writeLog(textLog)){
-	MessageLog.trace("Scene Opened startup! " + scenePath);
+	MessageLog.trace("Scene Opened! " + scenePath);
 	return;
 	}
 
@@ -64,8 +61,25 @@ var textLog = scenePath + "/_scene.log";
 	
 	scene.saveAll();
 	scene.clearHistory();
-
-	file.saveAs("C:/Temp/")
+	
+	//////////////Helper Functions////////
+	
+	function sceneExists(path){//checa se a pasta existe
+	var dir = new Dir;
+	dir.path = path;
+	return dir.exists;
+	}
+	
+	function getLastSceneVersion(scenePath){//pega a ultima versao da cena e retorna o caminho inteiro
+	var myDir = new Dir();
+	myDir.path = scenePath;
+	var fileList = myDir.entryList("*.xstage",2,1);
+		if(fileList == ""){
+		MessageLog.trace("Versão mais recente não encontrada! Verifique se o arquivo dado é um arquivo de Toon Boom!");
+		return false;
+		}
+	return myDir.filePath(fileList[0]);
+	}
 	
 	function writeLog(txtName){//cria um log com as infos sobre o envio
 	var file = new File(txtName);
