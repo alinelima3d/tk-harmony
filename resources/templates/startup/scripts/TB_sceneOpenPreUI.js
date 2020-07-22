@@ -12,21 +12,28 @@ TB_RelinkPathsInteractive();
 var assetName = System.getenv("ASSET_NAME");
 var scenePath = System.getenv("SCENE_PATH");
 
-MessageLog.trace("pre Scene Opened startup! " + scenePath);
-if(!sceneExists(scenePath)){
-	MessageLog.trace("scene exists! " + scenePath);
-	scene.saveAs(scenePath)
-} else {
-	MessageLog.trace("else " + scenePath);
-	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
-	MessageLog.trace("tbPath " + tbPath);
-	var lastVersion = getLastSceneVersion(scenePath);
-	MessageLog.trace("lastVersion " + lastVersion);
-	var start = Process2(tbPath, lastVersion);
+MessageLog.trace("pre Scene Opened startupp! " + scenePath);
+var tbPath = "C:/Program Files (x86)/Toon Boom Animation/Toon Boom Harmony 16.0 Premium/win64/bin/HarmonyPremium.exe";
+var lastVersion = 'X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/Character03.v001.xstage'
+var start = Process2(tbPath, lastVersion);
+MessageLog.trace("mid Scene Opened startupp! " + scenePath);
+start.launchAndDetach();
+scene.closeSceneAndExit();
+MessageLog.trace("pos Scene Opened startupp! " + scenePath);
+// if(!sceneExists(scenePath)){
+// 	MessageLog.trace("scene exists! " + scenePath);
+// 	scene.saveAs(scenePath)
+// } else {
+// 	MessageLog.trace("else " + scenePath);
+// 	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
+// 	MessageLog.trace("tbPath " + tbPath);
+// 	var lastVersion = getLastSceneVersion(scenePath);
+// 	MessageLog.trace("lastVersion " + lastVersion);
+// 	var start = Process2(tbPath, lastVersion);
 	
-	start.launchAndDetach();
-	scene.closeSceneAndExit();
-}
+// 	start.launchAndDetach();
+// 	scene.closeSceneAndExit();
+// }
 
 var textLog = scenePath + "/_scene.log";
 
