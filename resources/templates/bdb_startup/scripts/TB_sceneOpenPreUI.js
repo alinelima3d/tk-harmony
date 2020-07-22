@@ -8,8 +8,8 @@ include( "TB_RelinkPaths.js" )
 
 MessageLog.trace("after include" );
 
-var assetName = "Character03";
-var scenePath = "X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/";
+var assetName = System.getenv('ASSET_NAME');
+var scenePath = System.getenv('SCENE_PATH');
 
 MessageLog.trace("pre open scene" );
 
