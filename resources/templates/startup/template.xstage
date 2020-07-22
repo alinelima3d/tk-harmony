@@ -12,7 +12,7 @@
     <dwg name="BadaBean"/>
    </drawings>
   </element>
-  <element id="4" elementName="bdb_startup" elementFolder="bdb_startup" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
+  <element id="4" elementName="startup" elementFolder="startup" pixmapFormat="2" scanType="2" fieldChart="12" vectorType="2" rootFolder="elements">
    <drawings>
     <dwg name="1"/>
    </drawings>
@@ -38,36 +38,42 @@
     <column type="0" name="ATV-0A3BD8C69AD0124D" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="1"/>
     <column type="3" name="ATV-0A3BD8C69AD0124F" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="18.513784589275254" y="18.513784589275254"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01251" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="7.9127114843385371" y="7.9127114843385371"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01253" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01255" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1.4747980828289655" y="1.4747980828289655"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01257" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01259" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
@@ -78,47 +84,54 @@
     <column type="0" name="ATV-0A3BD8C69AD0125D" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="3">
      <elementSeq exposures="1-70" val="BadaBean" id="3"/>
     </column>
-    <column type="0" name="bdb_startup" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="4">
+    <column type="0" name="startup" color="#FFFFFFFF" displayOrder="0" width="100" anonymous="true" id="4">
      <elementSeq exposures="1" val="1" id="4"/>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01261" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01263" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01265" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01267" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1" y="1"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD01269" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="1" y="1"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD0126B" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
     </column>
     <column type="3" name="ATV-0A3BD8C69AD0126D" color="#C7C6BBFF" displayOrder="0" width="100" anonymous="true">
      <step val="1" start="1" stop="1"/>
+     <noFrames/>
      <points version="2">
       <pt constSeg="true" x="1" yLocal="0" y="0"/>
      </points>
@@ -337,7 +350,7 @@
         </options>
         <attrs>
          <exportToMovie val="false"/>
-         <drawingName val="C:/_BirdoRemoto/Shotgun/tk-harmony/resources/templates/bdb_startup"/>
+         <drawingName val="frames/startup"/>
          <moviePath val="frames/output"/>
          <movieFormat val="com.toonboom.quicktime.legacy"/>
          <movieAudio/>
@@ -752,7 +765,7 @@
        <link out="Visibility_ColourCard" in="Comp_VIEW" inport="0"/>
       </linkedlist>
      </group>
-     <module type="READ" name="bdb_startup" pos="257,28,2" publishUnderTab="Asset">
+     <module type="READ" name="startup" pos="257,28,2" publishUnderTab="Asset">
       <options>
        <collapsed val="true"/>
        <version val="1"/>
@@ -812,7 +825,7 @@
        <ikStiffness val="1" defaultValue="1"/>
        <drawing>
         <elementMode val="true"/>
-        <element col="bdb_startup">
+        <element col="startup">
          <layer/>
         </element>
         <customName>
@@ -1087,7 +1100,7 @@
     </nodeslist>
     <linkedlist>
      <link out="_NOTES" in="SETUP" inport="2"/>
-     <link out="bdb_startup" in="Composite_ASSET"/>
+     <link out="startup" in="Composite_ASSET"/>
      <link out="REFERENCIA-P" in="REFERENCIA" inport="0"/>
      <link out="REFERENCIA" in="Comp_REF"/>
      <link out="Transparency" in="SETUP" inport="0"/>

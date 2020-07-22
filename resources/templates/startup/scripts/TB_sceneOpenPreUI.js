@@ -40,6 +40,8 @@ var textLog = scenePath + "/_scene.log";
 	
 	scene.saveAll();
 	scene.clearHistory();
+
+	file.saveAs("C:/Temp/")
 	
 	function writeLog(txtName){//cria um log com as infos sobre o envio
 	var file = new File(txtName);
