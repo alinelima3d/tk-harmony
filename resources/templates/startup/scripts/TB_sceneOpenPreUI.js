@@ -4,22 +4,23 @@
                been created and loaded.
   Note: This script is also executed when opening a template for editing.
  */ 
-include( "TB_RelinkPaths.js" )
+MessageLog.trace("pre import startup" );
 
-MessageLog.trace("after include" );
+ include( "TB_RelinkPaths.js" )
+
+ MessageLog.trace("pos import" );
+ 
+function TB_sceneOpenPreUI_Offline(){
+TB_RelinkPathsInteractive();
 
 var assetName = "Character03";
 var scenePath = "X:/projects/badabean/assets/Character/Character03/PRB/work/harmony/scenes/";
 
-MessageLog.trace("pre open scene" );
-
 	if(!sceneExists(scenePath)){
-		MessageLog.trace("scene exists pre save as" );
-		scene.saveAs(scenePath);
+	scene.saveAs(scenePath);
 	} else {
 	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
 	var lastVersion = getLastSceneVersion(scenePath);
-	MessageLog.trace("lastVersion" + lastVersion );
 		if(!lastVersion){
 		MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
 		return;
@@ -29,8 +30,6 @@ MessageLog.trace("pre open scene" );
 	start.launchAndDetach();
 	scene.closeSceneAndExit();
 	}
-
-TB_RelinkPathsInteractive();
 	
 var textLog = scenePath + "/_scene.log";
 
