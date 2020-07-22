@@ -12,12 +12,18 @@ TB_RelinkPathsInteractive();
 var assetName = System.getenv("ASSET_NAME");
 var scenePath = System.getenv("SCENE_PATH");
 
+MessageLog.trace("pre Scene Opened startup! " + scenePath);
 if(!sceneExists(scenePath)){
+	MessageLog.trace("scene exists! " + scenePath);
 	scene.saveAs(scenePath)
 } else {
+	MessageLog.trace("else " + scenePath);
 	var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
+	MessageLog.trace("tbPath " + tbPath);
 	var lastVersion = getLastSceneVersion(scenePath);
+	MessageLog.trace("lastVersion " + lastVersion);
 	var start = Process2(tbPath, lastVersion);
+	
 	start.launchAndDetach();
 	scene.closeSceneAndExit();
 }
