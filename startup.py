@@ -278,8 +278,8 @@ class HarmonyLauncher(SoftwareLauncher):
         #                     shutil.copy(xFile, zFile)
 
 
-        # required_env["ASSET_NAME"] = assetName
-        # required_env["SCENE_PATH"] = path
+        required_env["ASSET_NAME"] = assetName
+        required_env["SCENE_PATH"] = path
 
         args = " -debug"
         args += ' "' + xtage + '"'
