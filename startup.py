@@ -263,9 +263,9 @@ class HarmonyLauncher(SoftwareLauncher):
             'stepCode': step['short_name'],
         }
 
-        # if not os.path.exists(path):
-        #     if os.path.exists(path.replace('X', 'Z')):
-        #         shutil.copytree(path.replace('X', 'Z'), path)
+        if not os.path.exists(path):
+            if os.path.exists(path.replace('X', 'Z')):
+                shutil.copytree(path.replace('X', 'Z'), path)
         # else:
         #     if os.path.exists(path.replace('X', 'Z')):
         #         xstagesFiles = os.path.listdir(path.replace('X', 'Z'))
