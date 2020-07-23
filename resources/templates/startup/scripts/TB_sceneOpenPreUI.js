@@ -42,12 +42,15 @@ function TB_sceneOpenPreUI_Offline(){
 		var lastVersion = getLastSceneVersion(scenePath);
 		MessageLog.trace("aline: lastVersion" + lastVersion);
 		if(!lastVersion){
+			MessageLog.trace("aline: if lastVersion" + lastVersion);
 			MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
 			return;
 		} else {
+			MessageLog.trace("aline: else" + lastVersion);
 			window = QApplication.activeWindow();
 			path = scenePath;
 			window.requestOpenScene(lastVersion);
+			MessageLog.trace("aline: else2" + lastVersion);
 			return;
 		}
 	
