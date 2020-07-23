@@ -1454,14 +1454,7 @@ function Shotgun()
             engine.show_busy("Initializing Shotgun Engine, please wait ...",  "Shotgun engine is being loaded at the moment, this dialog will close once the connection has been established.");
             System.processOneEvent();
 
-            engine.on_engine_ready_callbacks.push(engine.clear_busy);
-            engine.on_engine_ready_callbacks.push(engine.adquire_main_window);
-            engine.on_engine_ready_callbacks.push(engine.refresh_title);
-        }
-    }
-    MessageLog.trace("Shotgun engine...Done")
-
-    MessageLog.trace("aline: pre first open");
+            MessageLog.trace("aline: pre first open");
 	if(!firstOpen()){
 		MessageLog.trace("aline: Scene Opene");
 		MessageLog.trace("Scene Opened: " + scene.currentProjectPath());
@@ -1505,6 +1498,15 @@ function Shotgun()
 			MessageLog.trace("aline: else3" + lastVersion);
 			return;
 		}
+
+            engine.on_engine_ready_callbacks.push(engine.clear_busy);
+            engine.on_engine_ready_callbacks.push(engine.adquire_main_window);
+            engine.on_engine_ready_callbacks.push(engine.refresh_title);
+        }
+    }
+    MessageLog.trace("Shotgun engine...Done")
+
+    
 		return;
     }
     
