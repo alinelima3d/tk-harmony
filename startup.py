@@ -253,14 +253,14 @@ class HarmonyLauncher(SoftwareLauncher):
 
         # sg = shotgun_api3.Shotgun("https://badabean.shotgunstudio.com", login="aline.lima", password="Juju56537@")
         # step = sg.find("Step", [["id", "is", self.context.step['id']]], ["short_name"])
-        assetName = self.context.entity['name']
-        path = '%(projectRoot)s/%(projectName)s/assets/%(entityType)s/%(entityName)s/%(stepCode)s/work/harmony/scenes/' % {
-            'projectRoot': 'X:/projects',
-            'projectName': self.context.project['name'],
-            'entityType': 'Character',
-            'entityName': assetName,
-            'stepCode': 'PRB',
-        }
+        # assetName = self.context.entity['name']
+        # path = '%(projectRoot)s/%(projectName)s/assets/%(entityType)s/%(entityName)s/%(stepCode)s/work/harmony/scenes/' % {
+        #     'projectRoot': 'X:/projects',
+        #     'projectName': self.context.project['name'],
+        #     'entityType': 'Character',
+        #     'entityName': assetName,
+        #     'stepCode': 'PRB',
+        # }
 
         # if not os.path.exists(path):
         #     if os.path.exists(path.replace('X', 'Z')):
@@ -276,8 +276,8 @@ class HarmonyLauncher(SoftwareLauncher):
         #                     shutil.copy(xFile, zFile)
 
 
-        required_env["ASSET_NAME"] = assetName
-        required_env["SCENE_PATH"] = path
+        # required_env["ASSET_NAME"] = assetName
+        # required_env["SCENE_PATH"] = path
 
         args = " -debug"
         args += ' "' + xtage + '"'
