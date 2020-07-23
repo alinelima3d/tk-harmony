@@ -252,6 +252,7 @@ class HarmonyLauncher(SoftwareLauncher):
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
 
         sys.path.append('C:/Program Files/Shotgun/Resources/Python/bundle_cache/app_store/tk-core/v0.19.11/python/tank_vendor/')
+        import shotgun_api3
         sg = shotgun_api3.Shotgun("https://badabean.shotgunstudio.com", login="aline.lima", password="Juju56537@")
         step = sg.find("Step", [["id", "is", self.context.step['id']]], ["short_name"])
         assetName = self.context.entity['name']
