@@ -28,9 +28,10 @@ function TB_sceneOpenPreUI_Offline(){
 		MessageLog.trace("aline: cena nao existe, salvar");
 		// se cena nao existe, salvar como scenes
 		scene.saveAs(scenePath);
-		rmFile(scenePath + ".xstage")
+		
 		// e salvar uma nova versao para salvar com nome certo
 		scene.saveAsNewVersion(assetName + ".v001", true);
+		rmFile(scenePath + ".xstage")
 	} else {
 		// se a cena ja existe, abrir
 		MessageLog.trace("aline: cena existe, abrir");
