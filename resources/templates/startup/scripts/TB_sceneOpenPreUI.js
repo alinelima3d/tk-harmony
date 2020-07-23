@@ -9,11 +9,13 @@ include( "TB_RelinkPaths.js" )
 function TB_sceneOpenPreUI_Offline(){
 	// executa esse script toda vez que abre essa cena
 	// ou quando usa ela como template para criacao de uma nova cena
+	MessageLog.trace("aline: pre first open");
 	if(!firstOpen()){
 		MessageLog.trace("aline: Scene Opene");
 		MessageLog.trace("Scene Opened: " + scene.currentProjectPath());
 		return;
 	}
+	MessageLog.trace("aline: pos if");
 
 	MessageLog.trace("aline: 1");
 	var assetName = System.getenv('ASSET_NAME');
@@ -83,9 +85,10 @@ function TB_sceneOpenPreUI_Offline(){
 		// ver se existe o arquivo scene.log existe, 
 		// se existir quer dizer que nao eh a primeira vez que abre
 		// se nao existir, quer dizer que eh a primeira vez, que esta abrindo como template
-		MessageLog.trace("firstOpen " );
+		MessageLog.trace("aline: firstOpen" );
 		var sceneLog = new File(scene.currentProjectPath() + "/_scene.log");
 		MessageLog.trace(!sceneLog.exists );
+		MessageLog.trace("aline: firstOpen" + !sceneLog.exists );
 		return !sceneLog.exists;
 	}
 	
