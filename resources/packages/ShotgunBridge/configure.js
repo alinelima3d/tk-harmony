@@ -1455,53 +1455,55 @@ function Shotgun()
             System.processOneEvent();
 
             MessageLog.trace("aline: pre first open");
-	if(!firstOpen()){
-		MessageLog.trace("aline: Scene Opene");
-		MessageLog.trace("Scene Opened: " + scene.currentProjectPath());
-		return;
-	}
-	MessageLog.trace("aline: pos if");
-
-	MessageLog.trace("aline: 1");
-	var assetName = System.getenv('ASSET_NAME');
-	var scenePath = System.getenv('SCENE_PATH') + assetName;
-
-	MessageLog.trace("aline: 2" + assetName);
-	MessageLog.trace("aline: 3");
-
-	if(!sceneExists(scenePath)){
-		MessageLog.trace("aline: cena nao existe, salvar");
-		// se cena nao existe, salvar como scenes
-		scene.saveAs(scenePath);
-		
-		// e salvar uma nova versao para salvar com nome certo
-		scene.saveAsNewVersion(assetName + ".v001", true);
-		MessageLog.trace("aline: antes de excluir" + scenePath + ".xstage");
-		rmFile(scenePath + assetName + ".xstage")
-		MessageLog.trace("aline: depois de excluido" + scenePath + ".xstage");
-		return;
-	} else {
-		// se a cena ja existe, abrir
-		MessageLog.trace("aline: cena existe, abrir");
-		var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
-		var lastVersion = getLastSceneVersion(scenePath);
-		MessageLog.trace("aline: lastVersion" + lastVersion);
-		if(!lastVersion){
-			MessageLog.trace("aline: if lastVersion" + lastVersion);
-			MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
-			return;
-		} else {
-			MessageLog.trace("aline: else1" + lastVersion);
-			// window = QApplication.activeWindow();
-			MessageLog.trace("aline: else2" + lastVersion);
-			active_window.requestOpenScene(lastVersion);
-			MessageLog.trace("aline: else3" + lastVersion);
-			return;
-		}
+	
 
             engine.on_engine_ready_callbacks.push(engine.clear_busy);
             engine.on_engine_ready_callbacks.push(engine.adquire_main_window);
             engine.on_engine_ready_callbacks.push(engine.refresh_title);
+
+            if(!firstOpen()){
+                MessageLog.trace("aline: Scene Opene");
+                MessageLog.trace("Scene Opened: " + scene.currentProjectPath());
+                return;
+            }
+            MessageLog.trace("aline: pos if");
+        
+            MessageLog.trace("aline: 1");
+            var assetName = System.getenv('ASSET_NAME');
+            var scenePath = System.getenv('SCENE_PATH') + assetName;
+        
+            MessageLog.trace("aline: 2" + assetName);
+            MessageLog.trace("aline: 3");
+        
+            if(!sceneExists(scenePath)){
+                MessageLog.trace("aline: cena nao existe, salvar");
+                // se cena nao existe, salvar como scenes
+                scene.saveAs(scenePath);
+                
+                // e salvar uma nova versao para salvar com nome certo
+                scene.saveAsNewVersion(assetName + ".v001", true);
+                MessageLog.trace("aline: antes de excluir" + scenePath + ".xstage");
+                rmFile(scenePath + assetName + ".xstage")
+                MessageLog.trace("aline: depois de excluido" + scenePath + ".xstage");
+                return;
+            } else {
+                // se a cena ja existe, abrir
+                MessageLog.trace("aline: cena existe, abrir");
+                var tbPath = specialFolders.bin + "/HarmonyPremium.exe";
+                var lastVersion = getLastSceneVersion(scenePath);
+                MessageLog.trace("aline: lastVersion" + lastVersion);
+                if(!lastVersion){
+                    MessageLog.trace("aline: if lastVersion" + lastVersion);
+                    MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
+                    return;
+                } else {
+                    MessageLog.trace("aline: else1" + lastVersion);
+                    // window = QApplication.activeWindow();
+                    MessageLog.trace("aline: else2" + lastVersion);
+                    active_window.requestOpenScene(lastVersion);
+                    MessageLog.trace("aline: else3" + lastVersion);
+                    return;
+                }
         }
     }
     MessageLog.trace("Shotgun engine...Done")
