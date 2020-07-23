@@ -1499,9 +1499,9 @@ function Shotgun()
 			return;
 		} else {
 			MessageLog.trace("aline: else1" + lastVersion);
-			window = QApplication.activeWindow();
+			// window = QApplication.activeWindow();
 			MessageLog.trace("aline: else2" + lastVersion);
-			window.requestOpenScene(lastVersion);
+			active_window.requestOpenScene(lastVersion);
 			MessageLog.trace("aline: else3" + lastVersion);
 			return;
 		}
