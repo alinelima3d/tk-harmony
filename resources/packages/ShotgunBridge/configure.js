@@ -1,7 +1,5 @@
 "use strict";
 
-include( "TB_RelinkPaths.js" );
-
 function configure(packageFolder, packageName)
 {
   if (about.isPaintMode())
@@ -1383,8 +1381,6 @@ function Engine()
             self.server.start();
         }
         MessageLog.trace("--");
-
-        
     }
 
     self.stop = function()
