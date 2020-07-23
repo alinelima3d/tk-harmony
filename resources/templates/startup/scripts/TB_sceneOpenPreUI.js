@@ -19,7 +19,7 @@ function TB_sceneOpenPreUI_Offline(){
 
 	MessageLog.trace("aline: 1");
 	var assetName = System.getenv('ASSET_NAME');
-	var scenePath = System.getenv('SCENE_PATH') + assetName;
+	var scenePath = System.getenv('SCENE_PATH');
 
 	MessageLog.trace("aline: 2" + assetName);
 	MessageLog.trace("aline: 3");
