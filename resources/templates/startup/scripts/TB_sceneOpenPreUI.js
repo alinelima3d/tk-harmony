@@ -19,7 +19,7 @@ function TB_sceneOpenPreUI_Offline(){
 
 	MessageLog.trace("aline: 1");
 	var assetName = System.getenv('ASSET_NAME');
-	var scenePath = System.getenv('SCENE_PATH') + "/" + assetName;
+	var scenePath = System.getenv('SCENE_PATH') + assetName;
 
 	MessageLog.trace("aline: 2" + assetName);
 	MessageLog.trace("aline: 3" + scenePath);
@@ -46,11 +46,11 @@ function TB_sceneOpenPreUI_Offline(){
 			MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
 			return;
 		} else {
-			MessageLog.trace("aline: else" + lastVersion);
+			MessageLog.trace("aline: else1" + lastVersion);
 			window = QApplication.activeWindow();
-			path = scenePath;
-			window.requestOpenScene(lastVersion);
 			MessageLog.trace("aline: else2" + lastVersion);
+			window.requestOpenScene(lastVersion);
+			MessageLog.trace("aline: else3" + lastVersion);
 			return;
 		}
 	
