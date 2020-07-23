@@ -112,19 +112,21 @@ function TB_sceneOpenPreUI_Offline(){
 	}
 	
 	function getLastSceneVersion(scenePath){//pega a ultima versao da cena e retorna o caminho inteiro
-	var myDir = new Dir();
-	myDir.path = scenePath;
-	var fileList = myDir.entryList("*.xstage",2,1);
+		MessageLog.trace("aline: getLastSceneVersion" + scenePath );
+		var myDir = new Dir();
+		myDir.path = scenePath;
+		var fileList = myDir.entryList("*.xstage",2,1);
+		MessageLog.trace("aline: fileList" + fileList );
+		MessageLog.trace("aline: fileList" + fileList.length );
 		if(fileList == ""){
-		MessageLog.trace("Versão mais recente não encontrada! Verifique se o arquivo dado é um arquivo de Toon Boom!");
-		return false;
-	}
-	
-	var i;
-	for (i = 0; i < fileList.length; i++) {
-		MessageLog.trace("aline: fileList" + fileList[i] );
-	}
-	return myDir.filePath(fileList[0]);
+			MessageLog.trace("Versão mais recente não encontrada! Verifique se o arquivo dado é um arquivo de Toon Boom!");
+			return false;
+		}
+		var i;
+		for (i = 0; i < fileList.length; i++) {
+			MessageLog.trace("aline: fileList" + fileList[i] );
+		}
+		return myDir.filePath(fileList[0]);
 	}
 	
 	function writeLog(txtName){//cria um log com as infos sobre o envio
