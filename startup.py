@@ -22,8 +22,8 @@ from sgtk.platform.errors import TankEngineInitError
 from sgtk.platform import SoftwareLauncher, SoftwareVersion, LaunchInformation
 import shutil
 
-sys.path.append('C:/Program Files/Shotgun/Resources/Python/bundle_cache/app_store/tk-core/v0.19.11/python/tank_vendor/')
-import shotgun_api3
+# sys.path.append('C:/Program Files/Shotgun/Resources/Python/bundle_cache/app_store/tk-core/v0.19.11/python/tank_vendor/')
+# import shotgun_api3
 
 
 __author__ = "Diego Garcia Huerta"
@@ -251,15 +251,15 @@ class HarmonyLauncher(SoftwareLauncher):
         )
         required_env["SGTK_HARMONY_STARTUP_TEMPLATE"] = xtage.replace("\\", "/")
 
-        sg = shotgun_api3.Shotgun("https://badabean.shotgunstudio.com", login="aline.lima", password="Juju56537@")
-        step = sg.find("Step", [["id", "is", self.context.step['id']]], ["short_name"])
+        # sg = shotgun_api3.Shotgun("https://badabean.shotgunstudio.com", login="aline.lima", password="Juju56537@")
+        # step = sg.find("Step", [["id", "is", self.context.step['id']]], ["short_name"])
         assetName = self.context.entity['name']
         path = '%(projectRoot)s/%(projectName)s/assets/%(entityType)s/%(entityName)s/%(stepCode)s/work/harmony/scenes/' % {
             'projectRoot': 'X:/projects',
             'projectName': self.context.project['name'],
             'entityType': 'Character',
             'entityName': assetName,
-            'stepCode': step['short_name'],
+            'stepCode': 'PRB',
         }
 
         if not os.path.exists(path):
