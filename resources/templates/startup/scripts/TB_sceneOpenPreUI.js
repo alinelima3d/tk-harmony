@@ -34,6 +34,7 @@ function TB_sceneOpenPreUI_Offline(){
 		MessageLog.trace("aline: antes de excluir" + scenePath + ".xstage");
 		rmFile(scenePath + ".xstage")
 		MessageLog.trace("aline: depois de excluido" + scenePath + ".xstage");
+		return;
 	} else {
 		// se a cena ja existe, abrir
 		MessageLog.trace("aline: cena existe, abrir");
