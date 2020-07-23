@@ -1506,7 +1506,63 @@ function Shotgun()
 			return;
 		}
 		return;
+    }
+    
+    //////////////Helper Functions////////
+	function firstOpen(){//funcao que checa se o arquivo esta sendo aberto pela primeira vez
+		// ver se existe o arquivo scene.log existe, 
+		// se existir quer dizer que nao eh a primeira vez que abre
+		// se nao existir, quer dizer que eh a primeira vez, que esta abrindo como template
+		MessageLog.trace("aline: firstOpen" );
+		var sceneLog = new File(scene.currentProjectPath() + "/_scene.log");
+		MessageLog.trace(!sceneLog.exists );
+		MessageLog.trace("aline: firstOpen" + !sceneLog.exists );
+		return !sceneLog.exists;
 	}
+	
+	function sceneExists(path){//checa se a pasta existe
+	var dir = new Dir;
+	dir.path = path;
+	return dir.exists;
+	}
+	
+	function getLastSceneVersion(scenePath){//pega a ultima versao da cena e retorna o caminho inteiro
+		MessageLog.trace("aline: getLastSceneVersion" + scenePath );
+		var myDir = new Dir();
+		myDir.path = scenePath;
+		var fileList = myDir.entryList("*.xstage",2,1);
+		MessageLog.trace("aline: fileList" + fileList );
+		MessageLog.trace("aline: fileList" + fileList.length );
+		if(fileList == ""){
+			MessageLog.trace("Versão mais recente não encontrada! Verifique se o arquivo dado é um arquivo de Toon Boom!");
+			return false;
+		}
+		var i;
+		for (i = 0; i < fileList.length; i++) {
+			MessageLog.trace("aline: fileList" + fileList[i] );
+		}
+		return myDir.filePath(fileList[0]);
+	}
+	
+	function writeLog(txtName){//cria um log com as infos sobre o envio
+	var file = new File(txtName);
+		if(!file.exists){
+		file.open(FileAccess.WriteOnly);
+		file.writeLine("---------------------------Scene Created---------------------------------" + "\r");
+		file.writeLine("user: " + about.getUserName() + "\r");	
+		file.writeLine("time created: " + new Date() + "\r");
+		file.close();
+		MessageLog.trace("O arquivo '" + txtName + "' foi criado com sucesso!" );
+		return true;
+		} else { 
+		return false;
+		}
+	}
+
+	function rmFile(fn) {
+		var v = new PermanentFile(fn);
+		 v.remove();
+	 } 
     return true;
 }
 
