@@ -119,7 +119,9 @@ function TB_sceneOpenPreUI_Offline(){
 		MessageLog.trace("Versão mais recente não encontrada! Verifique se o arquivo dado é um arquivo de Toon Boom!");
 		return false;
 	}
-	for(var i=fileList; i>0; i--){
+	
+	var i;
+	for (i = 0; i < fileList.length; i++) {
 		MessageLog.trace("aline: fileList" + fileList[i] );
 	}
 	return myDir.filePath(fileList[0]);
