@@ -49,7 +49,7 @@ function TB_sceneOpenPreUI_Offline(){
 			MessageLog.trace("aline: else1" + lastVersion);
 			window = QApplication.activeWindow();
 			MessageLog.trace("aline: else2" + lastVersion);
-			window.requestOpenScene(lastVersion);
+			window.requestOpenScene(scenePath);
 			MessageLog.trace("aline: else3" + lastVersion);
 			return;
 		}
