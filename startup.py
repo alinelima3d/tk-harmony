@@ -23,7 +23,7 @@ from sgtk.platform import SoftwareLauncher, SoftwareVersion, LaunchInformation
 import shutil
 
 sys.path.append('C:/Program Files/Shotgun/Resources/Python/bundle_cache/app_store/tk-core/v0.19.11/python/tank_vendor/')
-shotgun_api3
+import shotgun_api3
 
 
 __author__ = "Diego Garcia Huerta"
