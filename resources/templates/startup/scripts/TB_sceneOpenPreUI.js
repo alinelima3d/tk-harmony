@@ -31,7 +31,9 @@ function TB_sceneOpenPreUI_Offline(){
 		
 		// e salvar uma nova versao para salvar com nome certo
 		scene.saveAsNewVersion(assetName + ".v001", true);
+		MessageLog.trace("aline: antes de excluir" + scenePath + ".xstage");
 		rmFile(scenePath + ".xstage")
+		MessageLog.trace("aline: depois de excluido" + scenePath + ".xstage");
 	} else {
 		// se a cena ja existe, abrir
 		MessageLog.trace("aline: cena existe, abrir");
