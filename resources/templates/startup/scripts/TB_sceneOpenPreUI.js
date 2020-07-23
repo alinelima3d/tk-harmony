@@ -4,17 +4,16 @@
                been created and loaded.
   Note: This script is also executed when opening a template for editing.
  */ 
-MessageLog.trace("pre import startup" );
-
- include( "TB_RelinkPaths.js" )
-
- MessageLog.trace("pos import" );
+include( "TB_RelinkPaths.js" )
  
 function TB_sceneOpenPreUI_Offline(){
-TB_RelinkPathsInteractive();
+	if(!firstOpen()){
+		MessageLog.trace("Scene Opened: " + scene.currentProjectPath());
+		return;
+	}
 
-var assetName = System.getenv('ASSET_NAME');
-var scenePath = System.getenv('SCENE_PATH');
+	var assetName = System.getenv('ASSET_NAME');
+	var scenePath = System.getenv('SCENE_PATH');
 
 	if(!sceneExists(scenePath)){
 	scene.saveAs(scenePath);
@@ -25,19 +24,18 @@ var scenePath = System.getenv('SCENE_PATH');
 		if(!lastVersion){
 		MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
 		return;
-		}
+	}
 			
 	var start = Process2(tbPath, lastVersion);
 	start.launchAndDetach();
 	scene.closeSceneAndExit();
 	}
 	
-var textLog = scenePath + "/_scene.log";
+	var textLog = scenePath + "/_scene.log";
 
-	if(!writeLog(textLog)){
-	MessageLog.trace("Scene Opened! " + scenePath);
-	return;
-	}
+	writeLog(textLog);
+
+	TB_RelinkPathsInteractive();
 
 	var assetNode = "Top/bdb_startup";
 	var columnId = node.linkedColumn(assetNode,"DRAWING.ELEMENT");
@@ -63,6 +61,10 @@ var textLog = scenePath + "/_scene.log";
 	scene.clearHistory();
 	
 	//////////////Helper Functions////////
+	function firstOpen(){//funcao que checa se o arquivo esta sendo aberto pela primeira vez
+		var sceneLog = new File(scene.currentProjectPath() + "/_scene.log");
+		return !sceneLog.exists;
+	}
 	
 	function sceneExists(path){//checa se a pasta existe
 	var dir = new Dir;
