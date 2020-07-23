@@ -22,7 +22,7 @@ function TB_sceneOpenPreUI_Offline(){
 	var scenePath = System.getenv('SCENE_PATH') + assetName;
 
 	MessageLog.trace("aline: 2" + assetName);
-	MessageLog.trace("aline: 3" + scenePath);
+	MessageLog.trace("aline: 3");
 
 	if(!sceneExists(scenePath)){
 		MessageLog.trace("aline: cena nao existe, salvar");
