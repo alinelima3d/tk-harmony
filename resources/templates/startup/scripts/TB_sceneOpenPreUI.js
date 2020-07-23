@@ -38,8 +38,13 @@ function TB_sceneOpenPreUI_Offline(){
 		MessageLog.trace("aline: lastVersion" + lastVersion);
 		if(!lastVersion){
 			MessageBox.information("Nao e uma cena de toon boom!\n" + scenePath);
-		return;
-	}
+			return;
+		} else {
+			window = QApplication.activeWindow();
+			path = scenePath;
+			window.requestOpenScene(lastVersion);
+			return;
+		}
 	
 	// abrir 
 	// MessageLog.trace("aline: comecar o processo de abrir");
@@ -49,6 +54,8 @@ function TB_sceneOpenPreUI_Offline(){
 	// MessageLog.trace("aline: comecar o processo de abrir 3");
 	// scene.closeSceneAndExit();
 	// MessageLog.trace("aline: comecar o processo de abrir 4");
+
+		
 
 	return;
 	}
