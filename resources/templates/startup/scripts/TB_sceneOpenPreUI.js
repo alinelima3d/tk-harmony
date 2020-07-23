@@ -8,6 +8,7 @@ include( "TB_RelinkPaths.js" )
  
 function TB_sceneOpenPreUI_Offline(){
 	if(!firstOpen()){
+		
 		MessageLog.trace("Scene Opened: " + scene.currentProjectPath());
 		return;
 	}
@@ -29,6 +30,7 @@ function TB_sceneOpenPreUI_Offline(){
 	var start = Process2(tbPath, lastVersion);
 	start.launchAndDetach();
 	scene.closeSceneAndExit();
+	return;
 	}
 	
 	var textLog = scenePath + "/_scene.log";
