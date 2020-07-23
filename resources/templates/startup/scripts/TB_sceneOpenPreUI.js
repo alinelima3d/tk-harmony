@@ -62,7 +62,9 @@ function TB_sceneOpenPreUI_Offline(){
 	
 	//////////////Helper Functions////////
 	function firstOpen(){//funcao que checa se o arquivo esta sendo aberto pela primeira vez
+		MessageLog.trace("firstOpen " );
 		var sceneLog = new File(scene.currentProjectPath() + "/_scene.log");
+		MessageLog.trace(!sceneLog.exists );
 		return !sceneLog.exists;
 	}
 	

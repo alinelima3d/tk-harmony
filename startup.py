@@ -257,18 +257,18 @@ class HarmonyLauncher(SoftwareLauncher):
             'stepCode': 'PRB',
         }
 
-        if not os.path.exists(path):
-            if os.path.exists(path.replace('X', 'Z')):
-                shutil.copytree(path.replace('X', 'Z'), path)
-        else:
-            if os.path.exists(path.replace('X', 'Z')):
-                xstagesFiles = os.path.listdir(path.replace('X', 'Z'))
-                for f in xstagesFiles:
-                    if f.endswith('.xstage'):
-                        xFile = path + f
-                        zFile = path.replace('X', 'Z') + f
-                        if not os.path.exists(xFile):
-                            shutil.copy(xFile, zFile)
+        # if not os.path.exists(path):
+        #     if os.path.exists(path.replace('X', 'Z')):
+        #         shutil.copytree(path.replace('X', 'Z'), path)
+        # else:
+        #     if os.path.exists(path.replace('X', 'Z')):
+        #         xstagesFiles = os.path.listdir(path.replace('X', 'Z'))
+        #         for f in xstagesFiles:
+        #             if f.endswith('.xstage'):
+        #                 xFile = path + f
+        #                 zFile = path.replace('X', 'Z') + f
+        #                 if not os.path.exists(xFile):
+        #                     shutil.copy(xFile, zFile)
 
 
         required_env["ASSET_NAME"] = assetName
